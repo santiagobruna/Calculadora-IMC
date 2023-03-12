@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    background: black;
+    color: White;
+  }
+  
+  #container {
+    margin: 0 auto;
+    margin-top: 50px;
+
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 650px;
+    
+    border: 1px solid yellow;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+  
+    background: orange;
+  }
+  
+  h2{
+    color: black;
+    border-bottom: 3px solid black;
+  }
+  
+  label{
+    color: black;
+  }
+  
+  input{
+    width: 174px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid white;
+    color: black;
+  }
+  
+  input#peso{
+    margin-left: 9px;
+    width: 175px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid white;
+    color: black;
+  }
+  
+  #btn{
+    width: 220px;
+    height: 25px;
+    color: orange;
+    background: black;
+  }
+  
+  #campo-texto{
+    width: 220px;
+    height: 100px;
+    background: black;
+    border-radius: 8px;
+    color: white;
+  }
+  
