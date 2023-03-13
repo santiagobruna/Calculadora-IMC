@@ -2,9 +2,13 @@ const calcular = document.getElementById('btn')
 
 function imc(){
   const nome = document.getElementById('nome').value
-  const altura = document.getElementById('altura').value
-  const peso = document.getElementById('peso').value
+  var altura = document.getElementById('altura').value
+  var peso = document.getElementById('peso').value
   const resultado = document.getElementById('campo-texto')
+
+    // validando a entrada de dados por vírgula
+      peso = peso.replace(',', '.');
+      altura = altura.replace(',', '.');
   
   if(nome != '' && altura != '' && peso != ''){
     const imc = ( peso / (altura * altura)).toFixed(2);
