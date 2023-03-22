@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background: black;
+    background-image: linear-gradient(to right, rgb(168, 154, 141), rgb(239, 185, 83));
     color: White;
   }
   
@@ -33,8 +33,16 @@ body {
     width: 174px;
     height: 30px;
     border-radius: 5px;
-    border: solid white;
+    border:1px solid #7c5519;
+    outline:none;
     color: black;
+  }
+
+  input:hover{
+    border-radius:4px;
+    box-shadow: 0px 0px 5px 0px #7c5519;
+    border:1px solid  #7c5519;
+    outline:none; 
   }
   
   input#peso{
@@ -51,6 +59,10 @@ body {
     height: 25px;
     color: orange;
     background: black;
+  }
+  #btn:hover{
+    color: white;
+    background: #383634;
   }
   
   #campo-texto{
