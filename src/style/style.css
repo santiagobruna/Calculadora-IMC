@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  :root{
+    --background-container: #484350;
+    --primary-color: #5D12D2;
+    --secondary-color: #FF6AC2;
+    --background-calc: #2B2730;
+    --background-btn: #B931FC;
+    --color-text: #FFE5E5;
+    --font-family: 'Inter', sans-serif;
+  }
+  
+  .container{ 
+    background-color: var(--background-container);
+    font-family: var(--font-family);
+    color: white;
+  }
+  .container__calc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__calc__img {
+      max-width: 350px;
+  }
+  
+  .calc {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem 4rem;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .calc__title {
+    padding-bottom: 1rem;
+  }
+
+  .calc input{
+    display: block;
+    width: 200px;
+    height: 39px;
+    margin: 10px 0;
+  }
+
+  .input__name::placeholder {
+    background: url(../assets/user.png) no-repeat right center;
+    background-size: 20px 16px;
+    padding: 0 10px;
+  }
+
+  .input__weight::placeholder {
+    background: url(../assets/peso.png) no-repeat right center;
+    background-size: 21px 17px;
+    padding: 0 10px;
+  }
+
+  .input__height::placeholder {
+    background: url(../assets/altura.png) no-repeat right center;
+    background-size: 25px 18px;
+    padding: 0 10px;
+  }
+
+  .container__btn {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .btn {
+    width: 110px;
+    height: 35px;
+    background-color: var(--background-btn);
+    border: none;
+    border: 1px solid white;
+    color: var(--color-text);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+  }
+
+  .btn:hover {
+    background-color: var(--primary-color);
+    border: 1px solid rgb(33, 29, 29);
+  }
+
+  .container__result {
+    text-align: center;
+    margin-top: 25px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .container__result__text {
+    width: 150px;
+    color: var(--color-text);
+  }
+  .container__info {
+    text-align: center;
+    margin-top: 19px;
+  }
+  .info a {
+    color: rgb(113, 98, 186);
+  }
+
+  @media (min-width: 1024px) {
+      .container__calc {
+        flex-direction: row;
+        height: 100vh;
+       
+      }
+      .container__calc__img {
+        max-width: 650px;
+    }
+
+    .calc {
+      margin-bottom: 0;
+      padding: 1rem 6rem;
+    }
+
+    .calc__title {
+      padding: 1.5rem 0;
+    }
+
+    .calc input {
+      width: 260px;
+      height: 45px;
+    }
+
+    .btn {
+      width: 150px;
+      height: 45px;
+    }
+  }

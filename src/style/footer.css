@@ -1,0 +1,10 @@
+.rodape {
+    text-align: center;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.rodape__text {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
