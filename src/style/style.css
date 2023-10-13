@@ -33,9 +33,9 @@
   .calc {
     border: 2px solid white;
     border-radius: 10px;
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .calc__title {
     padding-bottom: 1rem;
